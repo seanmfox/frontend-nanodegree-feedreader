@@ -63,7 +63,7 @@ $(function() {
          */
             
         it('is hidden by default', function() {
-            body = document.querySelector('body');
+            const body = document.querySelector('body');
             expect(body.classList[0]).toBe('menu-hidden');
         });  
             
@@ -74,8 +74,8 @@ $(function() {
           */
           
         it('changes visibility when clicked', function() {
-            hamburger = document.querySelector('.menu-icon-link')
-            body = document.querySelector('body');
+            const hamburger = document.querySelector('.menu-icon-link');
+            const body = document.querySelector('body');
             hamburger.click();
             expect(body.classList[0]).toBeUndefined();
             hamburger.click();
