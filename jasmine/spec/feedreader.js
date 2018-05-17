@@ -30,7 +30,7 @@ $(function() {
         it('each feed has a URL', function() {
             allFeeds.forEach(function(feed) {
                expect(feed.url).toBeDefined(); 
-               expect(feed.url).not.toBe('');
+               expect(feed.url.length).toBeGreaterThan(0);
             });
         });
 
@@ -41,7 +41,7 @@ $(function() {
         it('each feed has a name', function() {
             allFeeds.forEach(function(feed) {
                expect(feed.name).toBeDefined(); 
-               expect(feed.name).not.toBe('');
+               expect(feed.name.length).toBeGreaterThan(0);
             });
         });
          
@@ -56,8 +56,7 @@ $(function() {
          */
             
         it('is hidden by default', function() {
-            const body = document.querySelector('body');
-            expect(body.classList[0]).toBe('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });  
             
          /* Menu changes visibility when the menu icon is clicked.
@@ -65,11 +64,10 @@ $(function() {
           
         it('changes visibility when clicked', function() {
             const hamburger = document.querySelector('.menu-icon-link');
-            const body = document.querySelector('body');
             hamburger.click();
-            expect(body.classList[0]).toBeUndefined();
+            expect($('body').hasClass('menu-hidden')).toBe(false);
             hamburger.click();
-            expect(body.classList[0]).toBe('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });  
           
     });
@@ -84,7 +82,7 @@ $(function() {
          */
         
         it('load in the feed', function(done) {
-            const entries = document.querySelectorAll('.entry');
+            const entries = document.querySelectorAll('.feed .entry');
             expect(entries[0]).toBeDefined();
             done();
         });
