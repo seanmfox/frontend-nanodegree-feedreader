@@ -1,28 +1,23 @@
-# Udacifeeds Feed Reader
+# UdaciFeeds Feed Reader
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+Pull from your favorite RSS feeds to keep up-to-date on articles of interest.
 
+# Description
 
-## Why this Project?
+This game is a component of the Udacity Front-End Nanodegree Program.  Special attention in this project is given toward practicing testing using Jasmine.
 
-Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
+# Dependencies
 
-Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
+This program has the following dependencies:
+* jQuery
+* Handlebars
+* Icomoons font
+* Jasmine Unit Testing
+* Google JavaScript API
 
+# How to run program
 
-## What will I learn?
-
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
-
-
-## How will this help my career?
-
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
-
-
-# How will I complete this project?
-
-Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
-
-21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+1. Clone/download repository to obtain source files.
+2. Install Node.js (https://nodejs.org/en/download/) in order to install Jasmine (https://jasmine.github.io/pages/getting_started.html).
+3. Load `index.html` to start the feed reader.
+4. Check the bottom of the page for Jasmine test results.
